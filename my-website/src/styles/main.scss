@@ -1,0 +1,10 @@
+// Boostrapi ezmek için kullanacağımız overrides scss
+@import './bootstrap_overrides.scss'; 
+// Boostrap içerisinden gelen componentler 
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+// Kendi css Kodlarım
+@import './style.scss';
+// Popup css kodlarım.
+@import './popup.scss';
+// Resposive css kodlarım
+@import './responsive.scss';
