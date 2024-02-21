@@ -96,7 +96,8 @@
             background-color: transparent;
             border: 1px solid $background-color;
             transition: all .3s ease-in-out;
-
+            width: 25%;
+            justify-content: center;
             &:hover {
                 background-color: $background-color;
                 transition: all .3s ease-in-out;

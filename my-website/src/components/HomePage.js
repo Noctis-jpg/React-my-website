@@ -1,10 +1,13 @@
-import { faArrowAltCircleRight, faArrowRight, faArrowsTurnRight, faDesktop, faDownload } from '@fortawesome/free-solid-svg-icons'
+import { faArrowAltCircleRight, faDesktop, faDownload } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Popup from './Popup'
+import Social from './Social'
 import $ from 'jquery'; 
 import { useState } from 'react'
 import React from 'react'
-import { Link } from 'react-router-dom';
+function getCVUrl() {
+  return 'https://yunusmaden.com/YunusMaden-CV.pdf';
+}
 
 
 const HomePage = () => {
@@ -39,7 +42,7 @@ const HomePage = () => {
               <span  className='button-text'>MORE ABOUT ME</span>
               <span><FontAwesomeIcon icon={faArrowAltCircleRight} className='icon-more' size="2x"></FontAwesomeIcon></span>
             </button>
-
+              <Social />
           </div>
         </div>
       </div>
@@ -64,17 +67,13 @@ const HomePage = () => {
                 <img src="../images/dali-mobil.jpg" className="img-fluid main-img-mobile" alt="about avatar"/>
                 </div>
                 <div className='col-12'>
-                <ul className="about-list list-unstyled open-sans-font"><li><span className="title">first name: </span><span className="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">Yunus</span></li><li><span className="title">last name: </span><span className="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">MADEN</span></li><li><span className="title">Age: </span><span className="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">26 Years</span></li><li><span className="title">Nationality: </span><span className="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">Turkey</span></li><li><span className="title">Freelance: </span><span className="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">Available</span></li><li><span className="title">Address: </span><span className="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">Istanbul</span></li><li><span className="title">phone: </span><span className="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">+905317952039</span></li><li><span className="title">Email: </span><span className="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">yunusmaden25@gmail</span></li><li><span className="title">Skype: </span><span className="value d-block d-sm-inline-block d-lg-block d-xl-inline-block"> yunus.maden</span></li><li><span className="title">langages: </span><span className="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">Turkish, English</span></li></ul>                </div>
+                <ul className="about-list list-unstyled open-sans-font"><li><span className="title">first name: </span><span className="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">Yunus</span></li><li><span className="title">last name: </span><span className="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">MADEN</span></li><li><span className="title">Age: </span><span className="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">27 Years</span></li><li><span className="title">Nationality: </span><span className="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">Turkey</span></li><li><span className="title">Freelance: </span><span className="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">Available</span></li><li><span className="title">Address: </span><span className="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">Istanbul</span></li><li><span className="title">phone: </span><span className="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">+905317952039</span></li><li><span className="title">Email: </span><span className="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">yunusmaden25@gmail</span></li><li><span className="title">Skype: </span><span className="value d-block d-sm-inline-block d-lg-block d-xl-inline-block"> yunus.maden</span></li><li><span className="title">langages: </span><span className="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">Turkish, English</span></li></ul>                </div>
                 <div className='col-12'>
-                      <Link to='' target="_blank" className='button getPDF' id='getPDF'>
-                      
-                        <span target="_blank" className='button-text'>
-                          Download CV
-                        </span>
-                        
-                        <span><FontAwesomeIcon icon={faDownload} className='icon-more' size="1x"></FontAwesomeIcon></span>
-                        
-                      </Link>
+                <a href={getCVUrl()} target='_blank' className='button getPDF' id='getPDF'>
+  <span className='button-text'>Download CV</span>
+  <span><FontAwesomeIcon icon={faDownload} className='icon-more' size="1x"></FontAwesomeIcon></span>
+</a>
+
                 </div>
               </div>
             </div>

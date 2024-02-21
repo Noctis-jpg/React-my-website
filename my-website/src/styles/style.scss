@@ -212,6 +212,32 @@ body {
                     border-radius: 50%;
                 }
             }
+            .ym_Social{
+                display: flex;
+                align-items: start;
+                margin: 20px 10px;
+                gap: 2%;
+                flex-direction: column;
+                .Title_ym{
+                    h3{
+                        font-size: 23px;
+                        margin-bottom: 20px;
+                        color: #ffb400;
+                    }
+                }
+                .smIcons{
+                    display: flex;
+                
+                    a{
+                        text-decoration: none;
+                        color: white;
+                        margin: 0 10px;
+                    svg{
+                        cursor: pointer;
+                    }
+                }
+                }
+            }
         }
     }
     .popup-layer{
@@ -253,4 +279,5 @@ body {
     .ym-section{
         display: none;
     }
+    
 }

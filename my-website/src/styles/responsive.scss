@@ -1,4 +1,4 @@
-$mobil: 767px;
+$mobil: 1000px;
 $small: 300px;
 $vertical-tablet: 991px;
 $desktop:1200px;
@@ -49,6 +49,7 @@ $large: 1600px;
     
     }
     .home-card{
+      
       .text-uppercase{
         font-size: 23px;
     line-height: 48px;
@@ -70,8 +71,17 @@ $large: 1600px;
 
 @media screen and (max-width: $mobil ) {
   body{
+    .popup {
+      .popup-inner {
+        .button{
+          width: 100%;
+
+        }
+      } 
+    } 
     .home-details-container{
       height: auto;
+
       .home-avatar{
         background-image: url(../images/yunus-maden-mobil.jpg);
     border-radius: 50%;
@@ -80,18 +90,22 @@ $large: 1600px;
     border: 4px solid #252525;
     margin: 0 auto 25px;
     display: block;
-    position: sticky !important;
+    position: initial !important;
+    left: 20px;
+
 }
       .home-card{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        padding-bottom: 4rem;
+
         .text-uppercase{
-          font-size: 24px;
-    line-height: 42px;
-    margin: 25px 0 0px;
-    padding-left: 0px;
+          font-size: 24px !important;
+    line-height: 42px !important;
+    margin: 5px 0 0px !important; 
+    padding-left: 0px !important;
     
     ::before{
       display: none;
